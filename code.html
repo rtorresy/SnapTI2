@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SnapTI | Ingeniería de Soluciones Tecnológicas Escalables</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#33D4F3",
+                        secondary: "#F45DFF",
+                        "background-light": "#F9FAFB",
+                        "background-dark": "#0B0F1A",
+                    },
+                    fontFamily: {
+                        display: ["Plus Jakarta Sans", "Inter", "sans-serif"],
+                        sans: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.75rem",
+                    },
+                },
+            },
+        };
+    </script>
+<style type="text/tailwindcss">
+        @layer components {
+            .glass-effect {
+                backdrop-filter: blur(12px);
+                background: rgba(255, 255, 255, 0.03);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+            }
+            .gradient-text {
+                background: linear-gradient(135deg, #33D4F3 0%, #F45DFF 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            .glow-cyan:hover {
+                box-shadow: 0 0 20px rgba(51, 212, 243, 0.15);
+                border-color: rgba(51, 212, 243, 0.4);
+            }
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-sans antialiased transition-colors duration-300">
+<nav class="fixed top-0 w-full z-50 border-b border-slate-200/10 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<img alt="SnapTI Logo" class="w-10 h-10 rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBqKtaD_hOHye7Ity8N_2zreEXfqNRtH1updIW6SH3D072JZIGX-ffPRVBGhLDrZ8nQsf3FgSxo1jLqbCYoXatq8HpcKH75E_fiTtzOR0lDuorF_X7IaMYwjEjRfAbc02dCOTcpPZfup1WkFr56yYi1GaEdkxF-Y2N5LJYO4ZMAHkLMPnupQ05ONoVky4Xo2rIEjqgMgIHiPg5J3E2FhJKwelNwgFX2ptPGbUXWYnt1rA6yg0vd4Op8pH5mw7f84w23Wnhp-f3Vwo"/>
+<span class="font-display text-2xl font-extrabold tracking-tight">Snap<span class="text-primary">TI</span></span>
+</div>
+<div class="hidden md:flex items-center gap-8 font-medium text-sm">
+<a class="hover:text-primary transition-colors" href="#services">Servicios</a>
+<a class="hover:text-primary transition-colors" href="#about">Soluciones</a>
+<a class="hover:text-primary transition-colors" href="#clients">Casos de Éxito</a>
+<div class="h-4 w-[1px] bg-slate-200 dark:bg-slate-800 mx-1"></div>
+<div class="flex items-center gap-3 bg-slate-100 dark:bg-slate-900/50 p-1 rounded-lg border border-slate-200 dark:border-slate-800">
+<button class="px-2 py-1 rounded bg-white dark:bg-slate-800 shadow-sm text-xs font-bold text-primary">ES</button>
+<button class="px-2 py-1 rounded hover:bg-white/50 dark:hover:bg-slate-800/50 transition-all text-xs font-bold text-slate-400">EN</button>
+</div>
+<a class="px-5 py-2.5 bg-primary hover:bg-primary/90 text-slate-900 font-semibold rounded-full transition-all flex items-center gap-2" href="#">
+                    Contáctanos
+                    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<button class="md:hidden">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<header class="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
+<div class="absolute top-0 right-0 -z-10 w-full h-full">
+<div class="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] bg-primary/20 rounded-full blur-[120px] dark:opacity-30"></div>
+<div class="absolute bottom-[10%] left-[-5%] w-[400px] h-[400px] bg-secondary/20 rounded-full blur-[120px] dark:opacity-20"></div>
+</div>
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="space-y-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-wider">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+                    Excelencia en Ingeniería Empresarial
+                </div>
+<h1 class="text-5xl lg:text-7xl font-display font-extrabold leading-[1.1] text-slate-900 dark:text-white">
+                    Ingeniería de <br/>
+<span class="gradient-text">Soluciones</span> <br/>
+                    Tecnológicas Escalables.
+                </h1>
+<p class="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-lg leading-relaxed">
+                    Consultoría, desarrollo, integraciones y arquitectura empresarial de alta gama. Diseñamos sistemas resilientes que impulsan la transformación digital global.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 pt-4">
+<button class="px-8 py-4 bg-primary text-slate-900 font-bold rounded-xl hover:scale-105 transition-all shadow-xl shadow-primary/20">
+                        Consulta con Arquitectos
+                    </button>
+<button class="px-8 py-4 bg-transparent border border-slate-200 dark:border-slate-800 font-bold rounded-xl hover:bg-slate-50 dark:hover:bg-slate-900 transition-all flex items-center justify-center gap-2">
+                        Ver Casos de Éxito
+                        <span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+<div class="flex items-center gap-8 pt-8 border-t border-slate-200 dark:border-slate-800/50">
+<div class="flex -space-x-3">
+<img alt="CTO Profile" class="w-10 h-10 rounded-full border-2 border-background-light dark:border-background-dark bg-slate-200" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-MSXp5B6JWYHmxalyIOTXMYQKAjrQgqfyvr-Xit-w6YZIv8KyvUol-FEwEvzrIa76YOQJWbJdywr7lmFBgFGKzqDm0xnKJ74xFJiljfKMY1eCPfkEBbUZdnSlIu4MV_bx-06GUaMPNYE0q4glVknWkvXsGtfjM5R0IW9B88rLA9a50aXYr_wneHc07gRUtxGqd0AM4YX-f7Pfy0rcVQXPIcgay39YR4rxDionzA5aEBGY_eczEtkzPtUdF-BQTFQKiSLucV-sa8w"/>
+<img alt="CIO Profile" class="w-10 h-10 rounded-full border-2 border-background-light dark:border-background-dark bg-slate-200" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDN8XisBBrioxDS5YfRlMIvnGdI-E7-Xs2HHpzBWRXOT20yG_OjZmPYMmpB6_XbOL0Vu5jw4fgg0E_OKhxY9-L5TZRWlQHk9yAJYMRxs5NQ9h59_nTD7ZQI4umAbMPwEHlVEiIu1w2SJ5IKV4TJmywjlWHQKtTiOLTabnMr_NZ3_ogGVN4MbAMinMhy038puPoCC4_Jjo5ZgLlkYRCyqj6QYUAc-Lcub_93dIATaaGgdl4JUEoSeBajY5KwFGR8-JN8EUPQPmYUdEk"/>
+<img alt="VP Engineering Profile" class="w-10 h-10 rounded-full border-2 border-background-light dark:border-background-dark bg-slate-200" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5Ktr59incGpV5UKUiBa7NH4TcHyWL_tXIzzIyk_l66V8ERXurzwfTKWb886V8nZ5j7oSwJHxBP7A6TwcGYbVFfpqWz-pS3FT35dWFQ1BWLz8PdXBGYu_havh0M2JNR83K-S-4UdhdtHhKbKzqZRw2ssbkdrDe0Mm5w3IfwSQbywG2UVtV84eRX63YUDCXrcZGfjwAMRouZ7q9E1aYcarBeFg_9CY1UbzhZV29WO4ItfpuvVOEh4X2GZMMFz8v-CyLURGub3MICUc"/>
+</div>
+<div class="text-sm">
+<p class="font-bold">Confianza de CTOs en Fortune 500</p>
+<p class="text-slate-500">Garantizando 99.99% de confiabilidad</p>
+</div>
+</div>
+</div>
+<div class="relative hidden lg:block">
+<div class="relative w-full aspect-square flex items-center justify-center">
+<img alt="SnapTI Logo Concept" class="w-full max-w-[500px]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdK3E5JabY6PbUi5lXQ4ijFhmFJgtm2rAeDXBYyprOkMrjVHikFSVchOxxfq--GoElEp8oNvVm6_FYZSrpD3kW62d3OLdKghbX0HEEGi3dmtFkwYLtJ3gyQbia3woKbxV4FR4IE58hjs-RERzZF0DkQMmGtqQLZYsyxDpAdtvqpkGjKxluZHl-HvCEYseIJJYN3rpytIR6SJnKZ8Yx9qZZyKoaSOt6hQR498LcERtewlKUhdZMJTtea9ArzIzZsYDNYBnYvrYUOR4"/>
+<div class="absolute top-10 right-10 p-6 glass-effect rounded-2xl shadow-2xl border border-white/10 max-w-[200px]">
+<div class="flex items-center gap-3 mb-2">
+<span class="material-symbols-outlined text-primary">analytics</span>
+<span class="text-xs font-bold uppercase tracking-widest opacity-60">Escalabilidad</span>
+</div>
+<div class="text-2xl font-display font-bold">1.2M req/s</div>
+<div class="h-1.5 w-full bg-white/10 rounded-full mt-2 overflow-hidden">
+<div class="h-full bg-primary w-[85%]"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<section class="py-12 border-y border-slate-200/50 dark:border-slate-800/30">
+<div class="max-w-7xl mx-auto px-6">
+<p class="text-center text-sm font-semibold text-slate-400 dark:text-slate-500 uppercase tracking-[0.2em] mb-8">Alianzas de Ingeniería con Gigantes Globales</p>
+<div class="flex flex-wrap justify-center items-center gap-12 md:gap-20 opacity-50 grayscale hover:grayscale-0 transition-all duration-700">
+<span class="text-2xl font-display font-black">ORACLE</span>
+<span class="text-2xl font-display font-black">NETFLIX</span>
+<span class="text-2xl font-display font-black">NVIDIA</span>
+<span class="text-2xl font-display font-black">MICROSOFT</span>
+<span class="text-2xl font-display font-black">ADOBE</span>
+</div>
+</div>
+</section>
+<section class="py-24 md:py-32" id="services">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-20 space-y-4">
+<h2 class="text-primary font-bold tracking-widest uppercase text-sm">Nuestra Experiencia</h2>
+<h3 class="text-4xl md:text-5xl font-display font-extrabold">Soluciones de Grado Empresarial</h3>
+<p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto text-lg leading-relaxed">
+                    No solo escribimos código; diseñamos sistemas que superan la prueba de escala y tiempo.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="group p-8 rounded-3xl bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 glow-cyan transition-all duration-300">
+<div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl">terminal</span>
+</div>
+<h4 class="text-2xl font-display font-bold mb-4">Ingeniería de Software</h4>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
+                        Desarrollo full-stack a medida utilizando arquitecturas cloud-native y modelos de alta concurrencia.
+                    </p>
+<ul class="space-y-3 text-sm font-medium text-slate-500 dark:text-slate-400 mb-8">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Sistemas Cloud Native</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Arquitectura de Microservicios</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Optimización de Rendimiento</li>
+</ul>
+<a class="inline-flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all" href="#">
+                        Saber más <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="group p-8 rounded-3xl bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 glow-cyan transition-all duration-300">
+<div class="w-14 h-14 rounded-2xl bg-secondary/10 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-secondary text-3xl">lightbulb</span>
+</div>
+<h4 class="text-2xl font-display font-bold mb-4">Consultoría TI</h4>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
+                        Guía estratégica para hojas de ruta digitales y modernización de infraestructuras críticas.
+                    </p>
+<ul class="space-y-3 text-sm font-medium text-slate-500 dark:text-slate-400 mb-8">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Modernización de Sistemas</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Auditorías de Stack</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Transformación Digital</li>
+</ul>
+<a class="inline-flex items-center gap-2 text-secondary font-bold hover:gap-3 transition-all" href="#">
+                        Saber más <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="group p-8 rounded-3xl bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 glow-cyan transition-all duration-300">
+<div class="w-14 h-14 rounded-2xl bg-cyan-500/10 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-cyan-500 text-3xl">account_tree</span>
+</div>
+<h4 class="text-2xl font-display font-bold mb-4">Arquitectura Empresarial</h4>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
+                        Diseño de sistemas distribuidos complejos con protocolos de seguridad inquebrantables.
+                    </p>
+<ul class="space-y-3 text-sm font-medium text-slate-500 dark:text-slate-400 mb-8">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-cyan-500"></span> Diseño de Alta Disponibilidad</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-cyan-500"></span> Fortalecimiento de Seguridad</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-cyan-500"></span> Gobernanza de Datos</li>
+</ul>
+<a class="inline-flex items-center gap-2 text-cyan-500 font-bold hover:gap-3 transition-all" href="#">
+                        Saber más <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<section class="pb-24">
+<div class="max-w-7xl mx-auto px-6">
+<div class="relative overflow-hidden rounded-[2.5rem] bg-slate-900 dark:bg-slate-900 border border-slate-800 p-12 md:p-24 text-center">
+<div class="absolute -top-1/2 -right-1/4 w-[600px] h-[600px] bg-primary/20 blur-[100px] rounded-full"></div>
+<div class="absolute -bottom-1/2 -left-1/4 w-[600px] h-[600px] bg-secondary/10 blur-[100px] rounded-full"></div>
+<div class="relative z-10 space-y-8 max-w-3xl mx-auto">
+<h2 class="text-4xl md:text-6xl font-display font-extrabold text-white leading-tight">
+                        ¿Listo para diseñar el <span class="gradient-text">Futuro?</span>
+</h2>
+<p class="text-lg md:text-xl text-slate-400 leading-relaxed">
+                        Únete a los líderes tecnológicos globales que confían en SnapTI para construir sus activos de software más críticos.
+                    </p>
+<div class="flex flex-col sm:flex-row justify-center gap-6 pt-6">
+<button class="px-10 py-5 bg-primary text-slate-900 font-bold rounded-2xl hover:bg-white hover:scale-105 transition-all text-lg shadow-2xl">
+                            Programar una Consulta
+                        </button>
+<button class="px-10 py-5 bg-transparent border border-white/20 text-white font-bold rounded-2xl hover:bg-white/5 transition-all text-lg">
+                            Portafolio
+                        </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer class="bg-white dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800 py-20">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+<div class="col-span-1 md:col-span-1 space-y-6">
+<div class="flex items-center gap-3">
+<img alt="SnapTI Logo" class="w-8 h-8 rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxf3EZpA9rBJhwcgyOn_zr9d84UIUVKMcKwtEyQUa_lOh6xjILsOvJOTlEufkZ-JJ5ESFPyOaQzUS5L5Ax3EgUQw0j4XtoEnvMhJ-2vd0eayuEEG5NSF3p9Vk2_h5gmmK5Z1NhtSvC6PxUd9cpeGSWrPNq3UKcTRh8-z7mk-cjq7TepBrqDvEEPc4fMEgKZxIOL7xiE1h60jQHjBtKEcd6oaVE0qLFoaWzpjDXQjbTtRQ6wimzj_QliIsDeeAGm1kTjdNxYog2DyM"/>
+<span class="font-display text-xl font-extrabold tracking-tight">Snap<span class="text-primary">TI</span></span>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
+                        El estándar de oro en ingeniería tecnológica y consultoría arquitectónica. Construido para escalar, diseñado para la excelencia.
+                    </p>
+</div>
+<div>
+<h5 class="font-bold mb-6">Expertiz</h5>
+<ul class="space-y-4 text-sm text-slate-500 dark:text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#">Arquitectura Cloud</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Modernización Legada</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Ciberseguridad</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Ingeniería de Datos</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold mb-6">Compañía</h5>
+<ul class="space-y-4 text-sm text-slate-500 dark:text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#">Nosotros</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Carreras</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Insights</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contacto</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold mb-6">Sede Central</h5>
+<p class="text-sm text-slate-500 dark:text-slate-400 mb-4">
+                        101 Tech Plaza, Silicon Valley<br/>
+                        San Francisco, CA 94103
+                    </p>
+<p class="text-sm text-slate-500 dark:text-slate-400">
+                        +1 (555) 902-3412<br/>
+                        hello@snapti.engineering
+                    </p>
+</div>
+</div>
+<div class="pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-medium text-slate-500">
+<p>© 2024 SnapTI Engineering Solutions. Todos los derechos reservados.</p>
+<div class="flex gap-8">
+<a class="hover:text-slate-900 dark:hover:text-white transition-colors" href="#">Privacidad</a>
+<a class="hover:text-slate-900 dark:hover:text-white transition-colors" href="#">Términos de Servicio</a>
+</div>
+</div>
+</div>
+</footer>
+
+</body></html>
